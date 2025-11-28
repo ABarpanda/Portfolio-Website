@@ -61,9 +61,9 @@ export function Hero({ onViewWork }: HeroProps) {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight leading-tight"
             >
-              Christopher
+              Amritanshu
               <br />
-              <span className="text-[#D4AF37]">Columbus</span>
+              <span className="text-[#D4AF37]">Barpanda</span>
             </motion.h1>
 
             <motion.p

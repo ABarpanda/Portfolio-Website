@@ -6,17 +6,17 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/ABarpanda",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/amritanshu-barpanda/",
     },
     {
       icon: Twitter,
       label: "Twitter",
-      url: "https://twitter.com",
+      url: "https://x.com/IamABarpanda",
     },
   ];
 
@@ -35,13 +35,13 @@ export function Contact() {
           </p>
 
           <motion.a
-            href="mailto:hello@example.com"
+            href="mailto:abarpanda05@gmail.com"
             className="inline-flex items-center gap-3 px-8 py-4 bg-[#D4AF37] text-[#121212] rounded-sm hover:bg-[#C0A062] transition-colors duration-300 mb-12"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <Mail className="w-5 h-5" />
-            hello@example.com
+            abarpanda05@gmail.com
           </motion.a>
 
           <div className="flex justify-center gap-6 mt-8">

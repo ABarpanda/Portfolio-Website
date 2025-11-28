@@ -50,7 +50,7 @@ export function Navigation() {
             onClick={() => scrollToSection("home")}
             className="text-xl font-semibold tracking-tight hover:text-[#D4AF37] transition-colors duration-300"
           >
-            Christopher Columbus
+            Amritanshu Barpanda
           </button>
 
           <div className="flex gap-8">

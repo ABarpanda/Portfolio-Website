@@ -50,7 +50,7 @@ export function About() {
               >
                 <ImageWithFallback
                   src="/path/to/your/photo.jpg"
-                  alt="Christopher Columbus"
+                  alt="Amritanshu Barpanda"
                   className="w-full h-full object-cover"
                 />
                 {/* Overlay gradient */}
