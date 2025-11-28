@@ -84,23 +84,20 @@ export function About() {
           </motion.div>
 
           <div className="space-y-6">
-            {skills.map((skill, index) => {
-              const Icon = skill.icon;
-              return (
-                <motion.div
-                  key={skill.title}
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="group p-6 border border-white/15 rounded-sm hover:border-[#D4AF37] transition-all duration-300"
-                >
-                  <Icon className="w-8 h-8 text-[#D4AF37] mb-4" />
-                  <h3 className="text-xl mb-2">{skill.title}</h3>
-                  <p className="text-[#9a9a9a]">{skill.description}</p>
-                </motion.div>
-              );
-            })}
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill.title}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                viewport={{ once: true }}
+                className="group p-6 border border-white/15 rounded-sm hover:border-[#D4AF37] transition-all duration-300"
+              >
+                <skill.icon className="w-8 h-8 text-[#D4AF37] mb-4" />
+                <h3 className="text-xl mb-2">{skill.title}</h3>
+                <p className="text-[#9a9a9a]">{skill.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

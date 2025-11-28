@@ -4,6 +4,7 @@ import { About } from "./components/About";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { BackgroundElements } from "./components/BackgroundElements";
 
 export default function App() {
   const scrollToProjects = () => {
@@ -14,13 +15,16 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#121212] text-[#EAEAEA]">
-      <Navigation />
-      <Hero onViewWork={scrollToProjects} />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen bg-[#121212] text-[#EAEAEA] relative">
+      <BackgroundElements />
+      <div className="relative z-10">
+        <Navigation />
+        <Hero onViewWork={scrollToProjects} />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -48,21 +48,21 @@ export function Contact() {
             {socialLinks.map((link, index) => {
               const Icon = link.icon;
               return (
-                <motion.a
-                  key={link.label}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-4 border border-white/15 rounded-sm hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -5 }}
-                >
+              <motion.a
+                key={link.label}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 border border-white/15 rounded-sm hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all duration-300"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
                   <Icon className="w-6 h-6" />
-                  <span className="sr-only">{link.label}</span>
-                </motion.a>
+                <span className="sr-only">{link.label}</span>
+              </motion.a>
               );
             })}
           </div>
