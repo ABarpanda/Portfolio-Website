@@ -72,8 +72,7 @@ export function Hero({ onViewWork }: HeroProps) {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg md:text-xl text-[#9a9a9a] mb-8 max-w-xl leading-relaxed"
             >
-              Creative developer crafting digital experiences at the intersection of design and
-              technology. Specialized in building elegant, high-performance web applications.
+              Aspiring AI Engineer focused on deep learning, NLP, and computer vision. I aim to make AI accessible and improve everyday human life through practical, meaningful applications.
             </motion.p>
 
             <motion.div

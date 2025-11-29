@@ -60,20 +60,21 @@ export function About() {
               <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-[#D4AF37] rounded-sm -z-10" />
             </div>
 
-            <p className="text-lg text-[#EAEAEA] mb-6 leading-relaxed">
-              I'm a passionate developer who believes in the power of great design and clean code.
-              With years of experience in web development, I specialize in creating digital
-              experiences that are not only beautiful but also functional and accessible.
+           <p className="text-lg text-[#EAEAEA] mb-6 leading-relaxed">
+              I'm an aspiring AI engineer dedicated to creating practical, human-centered technology that integrates naturally 
+              into daily life. I care about building systems that are not just intelligent, but also intuitive and accessible.
             </p>
             <p className="text-lg text-[#9a9a9a] mb-6 leading-relaxed">
-              My approach combines technical expertise with a keen eye for design, ensuring that
-              every project I work on meets the highest standards of quality and craftsmanship.
+              Beyond AI, I'm interested in embedded systems and IoT, working at the intersection of smart hardware and 
+              intelligent software. I also build front-end applications with React and contribute to open-source projects 
+              with solid Git proficiency. My goal is to combine thoughtful design with reliable engineering to make a 
+              meaningful impact.
             </p>
 
             {/* Resume Download Button */}
             <motion.a
-              href="/path/to/your/resume.pdf"
-              download="Christopher_Columbus_Resume.pdf"
+              href="src/assets/resume.pdf"
+              download="Amritanshu_Barpanda_resume.pdf"
               className="inline-flex items-center gap-3 px-6 py-3 border-2 border-[#D4AF37] text-[#D4AF37] rounded-sm hover:bg-[#D4AF37] hover:text-[#121212] transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
