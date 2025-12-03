@@ -49,7 +49,7 @@ export function About() {
                 className="relative w-full h-full overflow-hidden rounded-sm border-2 border-[#D4AF37]/30 hover:border-[#D4AF37] transition-colors duration-300"
               >
                 <ImageWithFallback
-                  src="/path/to/your/photo.jpg"
+                  src="src/assets/photo.jpg"
                   alt="Amritanshu Barpanda"
                   className="w-full h-full object-cover"
                 />

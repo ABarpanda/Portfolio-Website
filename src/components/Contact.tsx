@@ -31,7 +31,7 @@ export function Contact() {
         >
           <h2 className="text-5xl md:text-6xl mb-6">Let's Work Together</h2>
           <p className="text-xl text-[#9a9a9a] mb-12 max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? Feel free to reach out.
+            Have a project in mind? Feel free to reach out.
           </p>
 
           <motion.a
