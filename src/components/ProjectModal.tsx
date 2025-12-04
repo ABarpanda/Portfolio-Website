@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X, ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -48,7 +47,7 @@ export function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
             </button>
 
             <div className="aspect-video overflow-hidden">
-              <ImageWithFallback
+              <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover"

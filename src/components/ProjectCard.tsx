@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface ProjectCardProps {
   title: string;
@@ -21,7 +20,7 @@ export function ProjectCard({ title, description, image, tags, onClick }: Projec
     >
       <div className="relative overflow-hidden border border-white/15 rounded-sm hover:border-[#D4AF37] transition-all duration-300 h-full">
         <div className="aspect-video overflow-hidden">
-          <ImageWithFallback
+          <img
             src={image}
             alt={title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { Code2, Palette, Zap, Download } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function About() {
   const skills = [
@@ -48,7 +47,7 @@ export function About() {
                 transition={{ duration: 0.3 }}
                 className="relative w-full h-full overflow-hidden rounded-sm border-2 border-[#D4AF37]/30 hover:border-[#D4AF37] transition-colors duration-300"
               >
-                <ImageWithFallback
+                <img
                   src="src/assets/photo.jpg"
                   alt="Amritanshu Barpanda"
                   className="w-full h-full object-cover"
