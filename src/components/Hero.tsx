@@ -119,9 +119,9 @@ export function Hero({ onViewWork }: HeroProps) {
           {/* Right side - Stats/Info */}
           <div className="md:col-span-5 space-y-8">
             {[
-              { number: "5+", label: "Years Experience" },
-              { number: "50+", label: "Projects Completed" },
-              { number: "30+", label: "Happy Clients" },
+              { number: "3+", label: "Years Experience" },
+              { number: "30+", label: "Projects Completed" },
+              { number: "10+", label: "Happy Clients" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
