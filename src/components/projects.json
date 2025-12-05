@@ -2,7 +2,7 @@
     {
         "title": "Parampara",
         "description": "A place to celebrate, preserve, and explore family rituals across India.",
-        "image": "src/assets/parampara.png",
+        "image": "/parampara.png",
         "tags": ["React", "Node", "Supabase", "Express"],
         "fullDescription": "Parampara is a simple cultural platform where users can document, preserve, and share their family rituals and traditions. It helps people stay connected to their roots through well-structured ritual entries and an easy-to-use, modern interface.",
         "features": [
@@ -16,7 +16,7 @@
     {
         "title": "Next-Problem",
         "description": "Find the next problem to solve on your CP journey",
-        "image": "src/assets/next-problem.png",
+        "image": "/next-problem.png",
         "tags": ["React", "Python", "API"],
         "fullDescription": "Next-Problem helps competitive programmers practice smarter by suggesting 10 problems tailored to their skill level. Just enter your Codeforces username and get instant, personalized recommendations.",
         "features": [
@@ -30,7 +30,7 @@
     {
         "title": "Om Tours",
         "description": "The travel agent of the future",
-        "image": "src/assets/om-tours.png",
+        "image": "/om-tours.png",
         "tags": ["Python", "Agentic AI", "HuggingFace"],
         "fullDescription": 
             "An agentic AI travel planner that builds custom trips using inputs like source, destination, dates, budget, group size, travel mode, and purpose. It delivers optimized itineraries, smart suggestions, and seamless end-to-end planning.",

@@ -48,7 +48,7 @@ export function About() {
                 className="relative w-full h-full overflow-hidden rounded-sm border-2 border-[#D4AF37]/30 hover:border-[#D4AF37] transition-colors duration-300"
               >
                 <img
-                  src="src/assets/photo.jpg"
+                  src="/photo.jpg"
                   alt="Amritanshu Barpanda"
                   className="w-full h-full object-cover"
                 />
@@ -72,7 +72,7 @@ export function About() {
 
             {/* Resume Download Button */}
             <motion.a
-              href="src/assets/resume.pdf"
+              href="/resume.pdf"
               download="Amritanshu_Barpanda_resume.pdf"
               className="inline-flex items-center gap-3 px-6 py-3 border-2 border-[#D4AF37] text-[#D4AF37] rounded-sm hover:bg-[#D4AF37] hover:text-[#121212] transition-all duration-300"
               whileHover={{ scale: 1.02 }}
