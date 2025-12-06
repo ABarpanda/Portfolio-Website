@@ -1,23 +1,30 @@
 import { motion } from "motion/react";
-import { Code2, Palette, Zap, Download } from "lucide-react";
+import { GitPullRequestCreateArrow, Code2, Palette, Zap, Download, NotebookPen } from "lucide-react";
+import { title } from "process";
 
 export function About() {
-  const skills = [
+  const achievements = [
     {
-      icon: Code2,
-      title: "Development",
-      description: "Building scalable web applications with modern technologies and best practices.",
+      icon: GitPullRequestCreateArrow,
+      title: "Hacktoberfest",
+      description: "Participated in Hacktoberfest 2023 and 2024",
+      url: "https://tree-nation.com/trees/5328996/view",
     },
     {
       icon: Palette,
-      title: "Design",
-      description: "Creating beautiful, intuitive interfaces that users love to interact with.",
+      title: "GRID-INDIA",
+      description: "Created detailed infographics using Matplotlib.",
     },
     {
       icon: Zap,
-      title: "Performance",
-      description: "Optimizing every detail for speed, accessibility, and user experience.",
+      title: "RSP",
+      description: "Built an IoT dashboard module enabling real-time ECR monitoring during outages",
     },
+    {
+      icon: NotebookPen,
+      title: "IIITA",
+      description: "Developed a facial recognition system for automatic attendence.",
+    }
   ];
 
   return (
@@ -84,20 +91,24 @@ export function About() {
           </motion.div>
 
           <div className="space-y-6">
-            {skills.map((skill, index) => (
-              <motion.div
-                key={skill.title}
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                viewport={{ once: true }}
-                className="group p-6 border border-white/15 rounded-sm hover:border-[#D4AF37] transition-all duration-300"
-              >
-                <skill.icon className="w-8 h-8 text-[#D4AF37] mb-4" />
-                <h3 className="text-xl mb-2">{skill.title}</h3>
-                <p className="text-[#9a9a9a]">{skill.description}</p>
-              </motion.div>
-            ))}
+            <ul className="list-disc list-inside space-y-4">
+              {achievements.map((skill, index) => (
+                <motion.li
+                  key={skill.title}
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-start gap-3 p-4 rounded-md border border-transparent hover:border-[#D4AF37] hover:bg-white/5 transition-all duration-300"
+                >
+                  <skill.icon className="w-6 h-6 text-[#D4AF37] mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold">{skill.title}</h3>
+                    <p className="text-[#9a9a9a]">{skill.description}</p>
+                  </div>
+                </motion.li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

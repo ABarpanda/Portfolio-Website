@@ -47,7 +47,7 @@
         "title": "Animegen",
         "description": "Convert boring novels into colorful comics",
         "image": "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjA4NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "tags": ["Python", "Generative AI"],
+        "tags": ["Python", "Generative AI", "Tkinter"],
         "fullDescription": "AnimeGen takes a written story, splits it into scenes, and turns each one into an anime-style image, creating a simple visual storytelling experience.",
         "features": [
             "Automatically splits stories into scenes",
