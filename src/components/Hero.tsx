@@ -49,20 +49,21 @@ export function Hero({ onViewWork }: HeroProps) {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 border border-[#D4AF37]/30 rounded-full mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 border border-[#D4AF37]/30 rounded-full mb-4
+                        text-xs sm:text-sm"
             >
-              <Sparkles className="w-4 h-4 text-[#D4AF37]" />
-              <span className="text-sm text-[#D4AF37]">Available for work</span>
+              <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-[#D4AF37]" />
+              <span className="text-[#D4AF37]">Available for work</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+                        mb-4 sm:mb-6 tracking-tight leading-[1.15]"
             >
-              Amritanshu
-              <br />
+              Amritanshu<br />
               <span className="text-[#D4AF37]">Barpanda</span>
             </motion.h1>
 
@@ -70,30 +71,31 @@ export function Hero({ onViewWork }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-lg md:text-xl text-[#9a9a9a] mb-8 max-w-xl leading-relaxed"
+              className="text-base sm:text-lg md:text-xl text-[#9a9a9a] 
+                        mb-6 sm:mb-8 max-w-[90%] sm:max-w-xl leading-relaxed"
             >
-              Aspiring AI Engineer focused on deep learning, NLP, and computer vision. I aim to make AI accessible and improve everyday human life through practical, meaningful applications.
+              Aspiring AI Engineer focused on deep learning, NLP, and computer
+              vision. I aim to make AI accessible and improve everyday human life
+              through practical, meaningful applications.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4"
             >
               <motion.button
                 onClick={handleViewWork}
-                className="group relative px-8 py-4 bg-[#D4AF37] text-[#121212] rounded-sm overflow-hidden transition-all duration-300"
+                className="group relative px-6 py-3 sm:px-8 sm:py-4 
+                          bg-[#D4AF37] text-[#121212] rounded-sm 
+                          overflow-hidden transition-all duration-300 text-sm sm:text-base"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   View My Work
-                  <motion.span
-                    initial={{ x: 0 }}
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.3 }}
-                  >
+                  <motion.span initial={{ x: 0 }} whileHover={{ x: 5 }} transition={{ duration: 0.3 }}>
                     →
                   </motion.span>
                 </span>
@@ -107,7 +109,10 @@ export function Hero({ onViewWork }: HeroProps) {
 
               <motion.a
                 href="#contact"
-                className="px-8 py-4 border-2 border-white/15 text-[#EAEAEA] rounded-sm hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all duration-300 text-center"
+                className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-white/15 
+                          text-[#EAEAEA] rounded-sm hover:border-[#D4AF37] 
+                          hover:text-[#D4AF37] transition-all duration-300 
+                          text-center text-sm sm:text-base"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

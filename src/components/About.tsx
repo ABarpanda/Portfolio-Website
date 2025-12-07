@@ -4,6 +4,7 @@ import { title } from "process";
 
 export function About() {
   const achievements = [
+    // Organised HackNITR 7.0
     {
       icon: GitPullRequestCreateArrow,
       title: "Hacktoberfest",
