@@ -6,6 +6,9 @@ import projectsData from './projects.json' assert { type: 'json' };
 
 // console.log(projectsData);
 
+// MinimalANN
+// ml-flow
+
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<typeof projectsData[0] | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
