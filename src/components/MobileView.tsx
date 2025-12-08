@@ -33,7 +33,12 @@ export function MobileView() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
-        className="fixed top-0 left-0 right-0 z-50 bg-[#121212]/95 backdrop-blur-md border-b border-white/10"
+        className={
+          `fixed top-0 left-0 right-0 z-50 border-b border-white/10 transition-colors duration-300 ` +
+          (menuOpen
+            ? "bg-[#121212]"
+            : "bg-[#121212]/50 backdrop-blur-md")
+        }
       >
         <div className="flex items-center justify-between px-6 py-4">
           {/* Logo or name */}
@@ -41,7 +46,9 @@ export function MobileView() {
             onClick={() => scrollToSection("home")}
             className="text-lg font-semibold text-white hover:text-[#D4AF37] transition"
           >
-            
+            {menuOpen
+            ? "Sections"
+            : ""}
           </button>
 
           {/* Burger Button */}
@@ -75,7 +82,7 @@ export function MobileView() {
                   <motion.li
                     key={section}
                     initial={{ x: -20, opacity: 0 }}
-                    animate={{ x: 0, opacity: 0.5 }}
+                    animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.05 + i * 0.05 }}
                     className="border-b border-white/10 last:border-0"
                   >
