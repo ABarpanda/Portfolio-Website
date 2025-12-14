@@ -56,5 +56,19 @@
             "Easy and intuitive to use"
         ],
         "githubUrl": "https://github.com/ABarpanda/Animegen"
+    },
+    {
+        "title": "MinimalANN",
+        "description": "Lightweight Neural Network framework",
+        "image": "/minimalANN.png",
+        "tags": ["Python", "Neural Networks", "Machine Learning", "AI", "IoT"],
+        "fullDescription": "minimalANN is a lightweight Python framework for building and training fully connected neural networks from scratch. It focuses on core learning concepts like backpropagation while remaining simple, intuitive, and resource-efficient for low-power systems.",
+        "features": [
+            "Create and train fully connected neural networks from scratch",
+            "Minimal, intuitive design focused on educational clarity",
+            "Optimized for free-tier CPU environments with limited resources",
+            "Minimal memory footprint suitable for edge and IoT devices"
+        ],
+        "githubUrl": "https://github.com/ABarpanda/minimalANN"
     }
 ]
