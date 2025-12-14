@@ -61,7 +61,7 @@
         "title": "MinimalANN",
         "description": "Lightweight Neural Network framework",
         "image": "/minimalANN.png",
-        "tags": ["Python", "Neural Networks", "Machine Learning", "AI", "IoT"],
+        "tags": ["Python", "Neural Networks", "IoT"],
         "fullDescription": "minimalANN is a lightweight Python framework for building and training fully connected neural networks from scratch. It focuses on core learning concepts like backpropagation while remaining simple, intuitive, and resource-efficient for low-power systems.",
         "features": [
             "Create and train fully connected neural networks from scratch",
@@ -70,5 +70,19 @@
             "Minimal memory footprint suitable for edge and IoT devices"
         ],
         "githubUrl": "https://github.com/ABarpanda/minimalANN"
+    },
+    {
+        "title": "PyShell",
+        "description": "A minimal shell clone built in Python",
+        "image": "/pyshell.png",
+        "tags": ["Python", "Systems Programming", "CLI"],
+        "fullDescription": "PyShell is a lightweight shell clone written in Python to explore how command-line interfaces work internally. It focuses on implementing core shell behavior such as command parsing, built-in commands, interactive history navigation, and quote handling.",
+        "features": [
+            "Supports core shell builtins: echo, pwd, type, history, exit",
+            "Interactive command history navigation using up/down arrow keys",
+            "Proper handling of single and double quotes in echo",
+            "REPL-style interactive shell experience"
+        ],
+        "githubUrl": "https://github.com/ABarpanda/python_shell"
     }
 ]
