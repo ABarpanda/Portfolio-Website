@@ -13,11 +13,11 @@ export function Contact() {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/amritanshu-barpanda/",
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      url: "https://x.com/IamABarpanda",
-    },
+    // {
+    //   icon: Twitter,
+    //   label: "Twitter",
+    //   url: "https://x.com/IamABarpanda",
+    // },
   ];
 
   return (

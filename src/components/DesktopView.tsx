@@ -16,7 +16,7 @@ export function DesktopView() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      const sections = ["home", "about", "projects", "contact"];
+      const sections = ["home", "about", "experience", "projects", "contact"];
       const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -54,7 +54,7 @@ export function DesktopView() {
           </button>
 
           <div className="flex gap-8">
-            {["home", "about", "projects", "contact"].map((section) => (
+            {["home", "about", "experience", "projects", "contact"].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}

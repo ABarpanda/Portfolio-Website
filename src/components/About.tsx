@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { GitPullRequestCreateArrow, Code2, Palette, Zap, Download, NotebookPen } from "lucide-react";
-import { title } from "process";
 
 export function About() {
   const achievements = [

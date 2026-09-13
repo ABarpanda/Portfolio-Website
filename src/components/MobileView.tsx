@@ -78,7 +78,7 @@ export function MobileView() {
                 transition={{ duration: 0.25 }}
                 className="flex flex-col px-6 py-3"
               >
-                {["home", "about", "projects", "contact"].map((section, i) => (
+                {["home", "about", "experience", "projects", "contact"].map((section, i) => (
                   <motion.li
                     key={section}
                     initial={{ x: -20, opacity: 0 }}
