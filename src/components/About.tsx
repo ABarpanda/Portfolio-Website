@@ -1,19 +1,25 @@
 import { motion } from "motion/react";
-import { GitPullRequestCreateArrow, Code2, Palette, Zap, Download, NotebookPen } from "lucide-react";
+import { GitPullRequestCreateArrow, Code2, Palette, Zap, Download, NotebookPen, Database } from "lucide-react";
 
 export function About() {
   const achievements = [
     // Organised HackNITR 7.0
     {
       icon: GitPullRequestCreateArrow,
-      title: "Hacktoberfest",
-      description: "Participated in Hacktoberfest 2023 and 2024",
-      url: "https://tree-nation.com/trees/5328996/view",
+      title: "Clippy-Vision",
+      description: "Contributed PRs for Ruff linting, privacy redaction, and a setup wizard UX bug report.",
+      url: "https://github.com/protocorn/clippy-vision",
     },
     {
-      icon: Palette,
-      title: "GRID-INDIA",
-      description: "Created detailed infographics using Matplotlib.",
+      icon: Database,
+      title: "Indian MPs Dataset",
+      description: "Published a Kaggle dataset of 786 Indian MPs with 16 attributes from official records.",
+      url: "https://www.kaggle.com/datasets/abarpanda/indian-mp-details",
+    },
+    {
+      icon: NotebookPen,
+      title: "IIITA",
+      description: "Developed a facial recognition system for automatic attendance.",
     },
     {
       icon: Zap,
@@ -21,10 +27,16 @@ export function About() {
       description: "Built an IoT dashboard module enabling real-time ECR monitoring during outages",
     },
     {
-      icon: NotebookPen,
-      title: "IIITA",
-      description: "Developed a facial recognition system for automatic attendence.",
-    }
+      icon: Palette,
+      title: "GRID-INDIA",
+      description: "Created detailed infographics using Matplotlib.",
+    },
+    {
+      icon: GitPullRequestCreateArrow,
+      title: "Hacktoberfest",
+      description: "Participated in Hacktoberfest 2023 and 2024",
+      url: "https://tree-nation.com/trees/5328996/view",
+    },
   ];
 
   return (
@@ -92,22 +104,49 @@ export function About() {
 
           <div className="space-y-6">
             <ul className="list-disc list-inside space-y-4">
-              {achievements.map((skill, index) => (
-                <motion.li
-                  key={skill.title}
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-start gap-3 p-4 rounded-md border border-transparent hover:border-[#D4AF37] hover:bg-white/5 transition-all duration-300"
-                >
-                  <skill.icon className="w-6 h-6 text-[#D4AF37] mt-1" />
-                  <div>
-                    <h3 className="text-lg font-semibold">{skill.title}</h3>
-                    <p className="text-[#9a9a9a]">{skill.description}</p>
-                  </div>
-                </motion.li>
-              ))}
+              {achievements.map((skill, index) => {
+                const content = (
+                  <>
+                    <skill.icon className="w-6 h-6 text-[#D4AF37] mt-1 shrink-0" />
+
+                    <div>
+                      <h3 className="text-lg font-semibold">{skill.title}</h3>
+                      <p className="text-[#9a9a9a]">{skill.description}</p>
+                    </div>
+                  </>
+                );
+
+                return skill.url ? (
+                  <motion.li
+                    key={skill.title}
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="list-item flex items-start gap-3 p-4 rounded-md border border-transparent hover:border-[#D4AF37] hover:bg-white/5 transition-all duration-300"
+                  >
+                    <a
+                      href={skill.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 w-full"
+                    >
+                      {content}
+                    </a>
+                  </motion.li>
+                ) : (
+                  <motion.li
+                    key={skill.title}
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="list-item flex items-start gap-3 p-4 rounded-md border border-transparent hover:border-[#D4AF37] hover:bg-white/5 transition-all duration-300"
+                  >
+                    {content}
+                  </motion.li>
+                );
+              })}
             </ul>
           </div>
         </div>
