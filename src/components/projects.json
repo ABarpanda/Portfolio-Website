@@ -14,20 +14,6 @@
         "liveUrl": "https://ourparampara.in"
     },
     {
-        "title": "Next-Problem",
-        "description": "Find the next problem to solve on your CP journey",
-        "image": "/next-problem.png",
-        "tags": ["React", "Python", "API"],
-        "fullDescription": "Next-Problem helps competitive programmers practice smarter by suggesting 10 problems tailored to their skill level. Just enter your Codeforces username and get instant, personalized recommendations.",
-        "features": [
-            "Personalized Codeforces problem suggestions",
-            "Beginner-friendly interface",
-            "Completely free and open-source"
-        ],
-        "liveUrl": "https://next-problem.com",
-        "githubUrl": "https://github.com/ABarpanda/Next-Problem"
-    },
-    {
         "title": "Om Tours",
         "description": "The travel agent of the future",
         "image": "/om-tours.png",
@@ -44,9 +30,24 @@
         "githubUrl": "https://github.com/omnavneet/om_tours"
     },
     {
+        "title": "CommentSense",
+        "description": "Summarize YouTube discussions with local AI",
+        "image": "/commentsense.png",
+        "tags": ["Python", "RAG", "Vector-Store", "Qwen 2.5"],
+        "fullDescription": "CommentSense is a lightweight Retrieval Augmented Generation system that scrapes and indexes YouTube comments to answer questions based on real viewer discussions. It uses TF-IDF sparse retrieval and a locally hosted Qwen 2.5 (0.5B) model to deliver grounded responses without relying on cloud APIs.",
+        "features": [
+            "Scrapes and indexes YouTube comments",
+            "Retrieves relevant discussions using TF-IDF",
+            "Generates grounded answers using a local LLM",
+            "Offline inference with no cloud API costs",
+            "Lightweight and efficient retrieval pipeline"
+        ],
+        "githubUrl": "https://github.com/ABarpanda/CommentSense"
+    },
+    {
         "title": "Animegen",
         "description": "Convert boring novels into colorful comics",
-        "image": "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjA4NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        "image": "https://images.unsplash.com/photo-1604781109199-ced99b89b0f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYzMjA4NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
         "tags": ["Python", "Generative AI", "Tkinter"],
         "fullDescription": "AnimeGen takes a written story, splits it into scenes, and turns each one into an anime-style image, creating a simple visual storytelling experience.",
         "features": [
@@ -56,6 +57,20 @@
             "Easy and intuitive to use"
         ],
         "githubUrl": "https://github.com/ABarpanda/Animegen"
+    },
+    {
+        "title": "Next-Problem",
+        "description": "Find the next problem to solve on your CP journey",
+        "image": "/next-problem.png",
+        "tags": ["React", "Python", "API"],
+        "fullDescription": "Next-Problem helps competitive programmers practice smarter by suggesting 10 problems tailored to their skill level. Just enter your Codeforces username and get instant, personalized recommendations.",
+        "features": [
+            "Personalized Codeforces problem suggestions",
+            "Beginner-friendly interface",
+            "Completely free and open-source"
+        ],
+        "liveUrl": "https://next-problem.com",
+        "githubUrl": "https://github.com/ABarpanda/Next-Problem"
     },
     {
         "title": "MinimalANN",
